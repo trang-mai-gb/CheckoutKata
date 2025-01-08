@@ -18,7 +18,7 @@ namespace CheckoutTestProject
 
 
         [Fact]
-        public void Test1()
+        public void Scan_AllItems_ReturnCorrectPrice()
         {
             var checkout = new Checkout(_pricingRules);
             checkout.Scan("A");
@@ -28,5 +28,20 @@ namespace CheckoutTestProject
 
             Assert.Equal(115, checkout.GetTotalPrice());
         }
+
+        [Fact]
+        public void Scan_ItemManyTime_ReturnCorrectPrice()
+        {
+            var checkout = new Checkout(_pricingRules);
+            checkout.Scan("A");
+            checkout.Scan("B");
+            checkout.Scan("A");
+            checkout.Scan("B");
+            checkout.Scan("A");
+
+            Assert.Equal(175, checkout.GetTotalPrice());
+        }
+
+        [Fact]
     }
 }
