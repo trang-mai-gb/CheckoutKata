@@ -3,8 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\maico\\OneDrive\\Desktop\\CheckoutProject\\CheckoutProject\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{66D284D7-80B2-4C43-A20E-117CD6019455}|CheckoutProject\\CheckoutProject.csproj|c:\\users\\maico\\onedrive\\desktop\\checkoutproject\\checkoutproject\\checkoutproject\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{66D284D7-80B2-4C43-A20E-117CD6019455}|CheckoutProject\\CheckoutProject.csproj|solutionrelative:checkoutproject\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FF159695-07D7-4703-A579-00D15B9A2897}|CheckoutTestProject\\CheckoutTestProject.csproj|c:\\users\\maico\\onedrive\\desktop\\checkoutproject\\checkoutproject\\checkouttestproject\\checkouttests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FF159695-07D7-4703-A579-00D15B9A2897}|CheckoutTestProject\\CheckoutTestProject.csproj|solutionrelative:checkouttestproject\\checkouttests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FF159695-07D7-4703-A579-00D15B9A2897}|CheckoutTestProject\\CheckoutTestProject.csproj|c:\\users\\maico\\onedrive\\desktop\\checkoutproject\\checkoutproject\\checkouttestproject\\checkouttestproject.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{FF159695-07D7-4703-A579-00D15B9A2897}|CheckoutTestProject\\CheckoutTestProject.csproj|solutionrelative:checkouttestproject\\checkouttestproject.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66D284D7-80B2-4C43-A20E-117CD6019455}|CheckoutProject\\CheckoutProject.csproj|c:\\users\\maico\\onedrive\\desktop\\checkoutproject\\checkoutproject\\checkoutproject\\checkout.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{66D284D7-80B2-4C43-A20E-117CD6019455}|CheckoutProject\\CheckoutProject.csproj|solutionrelative:checkoutproject\\checkout.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66D284D7-80B2-4C43-A20E-117CD6019455}|CheckoutProject\\CheckoutProject.csproj|c:\\users\\maico\\onedrive\\desktop\\checkoutproject\\checkoutproject\\checkoutproject\\pricingrule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{66D284D7-80B2-4C43-A20E-117CD6019455}|CheckoutProject\\CheckoutProject.csproj|solutionrelative:checkoutproject\\pricingrule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66D284D7-80B2-4C43-A20E-117CD6019455}|CheckoutProject\\CheckoutProject.csproj|c:\\users\\maico\\onedrive\\desktop\\checkoutproject\\checkoutproject\\checkoutproject\\icheckout.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{66D284D7-80B2-4C43-A20E-117CD6019455}|CheckoutProject\\CheckoutProject.csproj|solutionrelative:checkoutproject\\icheckout.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,17 +30,69 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CheckoutTestProject",
+              "DocumentMoniker": "C:\\Users\\maico\\OneDrive\\Desktop\\CheckoutProject\\CheckoutProject\\CheckoutTestProject\\CheckoutTestProject.csproj",
+              "RelativeDocumentMoniker": "CheckoutTestProject\\CheckoutTestProject.csproj",
+              "ToolTip": "C:\\Users\\maico\\OneDrive\\Desktop\\CheckoutProject\\CheckoutProject\\CheckoutTestProject\\CheckoutTestProject.csproj",
+              "RelativeToolTip": "CheckoutTestProject\\CheckoutTestProject.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-01-08T04:10:25.664Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Class1.cs",
-              "DocumentMoniker": "C:\\Users\\maico\\OneDrive\\Desktop\\CheckoutProject\\CheckoutProject\\CheckoutProject\\Class1.cs",
-              "RelativeDocumentMoniker": "CheckoutProject\\Class1.cs",
-              "ToolTip": "C:\\Users\\maico\\OneDrive\\Desktop\\CheckoutProject\\CheckoutProject\\CheckoutProject\\Class1.cs",
-              "RelativeToolTip": "CheckoutProject\\Class1.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "CheckoutTests.cs",
+              "DocumentMoniker": "C:\\Users\\maico\\OneDrive\\Desktop\\CheckoutProject\\CheckoutProject\\CheckoutTestProject\\CheckoutTests.cs",
+              "RelativeDocumentMoniker": "CheckoutTestProject\\CheckoutTests.cs",
+              "ToolTip": "C:\\Users\\maico\\OneDrive\\Desktop\\CheckoutProject\\CheckoutProject\\CheckoutTestProject\\CheckoutTests.cs",
+              "RelativeToolTip": "CheckoutTestProject\\CheckoutTests.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-08T04:08:53.353Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PricingRule.cs",
+              "DocumentMoniker": "C:\\Users\\maico\\OneDrive\\Desktop\\CheckoutProject\\CheckoutProject\\CheckoutProject\\PricingRule.cs",
+              "RelativeDocumentMoniker": "CheckoutProject\\PricingRule.cs",
+              "ToolTip": "C:\\Users\\maico\\OneDrive\\Desktop\\CheckoutProject\\CheckoutProject\\CheckoutProject\\PricingRule.cs",
+              "RelativeToolTip": "CheckoutProject\\PricingRule.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-08T03:33:19.954Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Checkout.cs",
+              "DocumentMoniker": "C:\\Users\\maico\\OneDrive\\Desktop\\CheckoutProject\\CheckoutProject\\CheckoutProject\\Checkout.cs",
+              "RelativeDocumentMoniker": "CheckoutProject\\Checkout.cs",
+              "ToolTip": "C:\\Users\\maico\\OneDrive\\Desktop\\CheckoutProject\\CheckoutProject\\CheckoutProject\\Checkout.cs",
+              "RelativeToolTip": "CheckoutProject\\Checkout.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAYwDMAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-08T03:31:59.778Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ICheckout.cs",
+              "DocumentMoniker": "C:\\Users\\maico\\OneDrive\\Desktop\\CheckoutProject\\CheckoutProject\\CheckoutProject\\ICheckout.cs",
+              "RelativeDocumentMoniker": "CheckoutProject\\ICheckout.cs",
+              "ToolTip": "C:\\Users\\maico\\OneDrive\\Desktop\\CheckoutProject\\CheckoutProject\\CheckoutProject\\ICheckout.cs",
+              "RelativeToolTip": "CheckoutProject\\ICheckout.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-08T03:24:26.389Z",
               "EditorCaption": ""

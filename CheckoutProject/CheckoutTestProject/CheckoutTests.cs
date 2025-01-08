@@ -3,8 +3,18 @@ namespace CheckoutTestProject
 {
     public class CheckoutTests
     {
-        private List<PricingRule>
+        private List<PricingRule> _pricingRules;
 
+        public CheckoutTests() 
+        {
+            _pricingRules = new List<PricingRule>()
+            {
+                new PricingRule("A", 50, 130, 3),
+                new PricingRule("B", 30, 45, 2),
+                new PricingRule("C", 20),
+                new PricingRule("D", 15)
+            };
+        }
 
 
         [Fact]
