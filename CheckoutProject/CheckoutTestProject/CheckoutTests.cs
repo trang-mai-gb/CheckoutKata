@@ -20,7 +20,13 @@ namespace CheckoutTestProject
         [Fact]
         public void Test1()
         {
+            var checkout = new Checkout(_pricingRules);
+            checkout.Scan("A");
+            checkout.Scan("B");
+            checkout.Scan("C");
+            checkout.Scan("D");
 
+            Assert.Equal(115, checkout.GetTotalPrice());
         }
     }
 }
