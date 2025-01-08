@@ -10,11 +10,13 @@ namespace CheckoutProject
     {
         private Dictionary<string, PricingRule> _pricingRules;
         private Dictionary<string, int> _scannedItems;
+        private IPricing _pricing;
 
         public Checkout(List<PricingRule> pricingRules)
         {
             _pricingRules = pricingRules.ToDictionary(p => p.Sku, p => p);
             _scannedItems = new Dictionary<string, int>();
+            _pricing = new Pricing();
         }
 
         public void Scan(string item)
@@ -41,14 +43,8 @@ namespace CheckoutProject
             foreach (var item in _scannedItems)
             {
                 var pricingRule = _pricingRules[item.Key];
-                if (pricingRule.SpecialPrice.HasValue && pricingRule.SpecialPriceQuantity.HasValue) 
-                {
-                    totalPrice += (int)((item.Value / pricingRule.SpecialPriceQuantity) * pricingRule.SpecialPrice + (item.Value % pricingRule.SpecialPriceQuantity) * pricingRule.Price);
-                }
-                else
-                {
-                    totalPrice += item.Value * pricingRule.Price;
-                }
+                var quantity = item.Value;
+                totalPrice += _pricing.CalculatePrice(quantity, pricingRule);
             }
 
             return totalPrice;
