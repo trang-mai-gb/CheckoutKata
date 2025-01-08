@@ -41,7 +41,5 @@ namespace CheckoutTestProject
 
             Assert.Equal(175, checkout.GetTotalPrice());
         }
-
-        [Fact]
     }
 }
