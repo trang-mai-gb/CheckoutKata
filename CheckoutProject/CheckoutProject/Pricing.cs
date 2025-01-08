@@ -8,15 +8,19 @@ namespace CheckoutProject
 {
     public class Pricing : IPricing
     {
-        public int CalculatePrice(int quantity, PricingRule rule)
+        public int CalculatePrice(int quantity, PricingRule pricingRule)
         {
             if (pricingRule.SpecialPrice.HasValue && pricingRule.SpecialPriceQuantity.HasValue)
             {
-                totalPrice += (int)((item.Value / pricingRule.SpecialPriceQuantity) * pricingRule.SpecialPrice + (item.Value % pricingRule.SpecialPriceQuantity) * pricingRule.Price);
+                var specialPrice = pricingRule.SpecialPrice.Value;
+                var specialPriceQuantity = pricingRule.SpecialPriceQuantity.Value;
+
+              
+                return (int)((quantity / specialPriceQuantity) * specialPrice + (quantity % specialPriceQuantity) * pricingRule.Price);
             }
             else
             {
-                totalPrice += item.Value * pricingRule.Price;
+                return quantity * pricingRule.Price;
             }
 
         }
