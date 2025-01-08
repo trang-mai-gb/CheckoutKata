@@ -41,5 +41,13 @@ namespace CheckoutTestProject
 
             Assert.Equal(175, checkout.GetTotalPrice());
         }
+
+        [Fact]
+        public void Scan_EmptyItem_ReturnZeroPrice()
+        {
+            var checkout = new Checkout(_pricingRules);
+
+            Assert.Equal(0, checkout.GetTotalPrice());
+        }
     }
 }
