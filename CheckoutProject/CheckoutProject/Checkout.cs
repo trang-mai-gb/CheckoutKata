@@ -17,7 +17,7 @@ namespace CheckoutProject
             _scannedItems = new Dictionary<string, int>();
         }
 
-        void Scan(string item)
+        public void Scan(string item)
         {
             if (!_pricingRules.ContainsKey(item)) 
             {
@@ -35,8 +35,23 @@ namespace CheckoutProject
             }
 
         }
-        int GetTotalPrice()
+        public int GetTotalPrice()
         {
+            int totalPrice = 0;
+            foreach (var item in _scannedItems)
+            {
+                var pricingRule = _pricingRules[item.Key];
+                if (pricingRule.SpecialPrice.HasValue && pricingRule.SpecialPriceQuantity.HasValue) 
+                {
+                    totalPrice += (int)((item.Value / pricingRule.SpecialPriceQuantity) * pricingRule.SpecialPrice + (item.Value % pricingRule.SpecialPriceQuantity) * pricingRule.Price);
+                }
+                else
+                {
+                    totalPrice += item.Value * pricingRule.Price;
+                }
+            }
+
+            return totalPrice;
 
         }
     }
