@@ -19,6 +19,20 @@ namespace CheckoutProject
 
         void Scan(string item)
         {
+            if (!_pricingRules.ContainsKey(item)) 
+            {
+                throw new Exception($"Item {item} not found.");
+            }
+            if (_scannedItems.ContainsKey(item)) 
+            { 
+                // Increase number of scannedItem
+                _scannedItems[item]++;
+            }
+            else 
+            {
+                //Start new scannedItem
+                _scannedItems[item] = 1;
+            }
 
         }
         int GetTotalPrice()
