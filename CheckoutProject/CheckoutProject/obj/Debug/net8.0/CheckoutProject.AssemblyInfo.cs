@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CheckoutProject")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+02bc8f4a42d68137625c4b9a5d92c099d37ad91e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+955e00fee642558b3e5cc3ef638f6ae45a481720")]
 [assembly: System.Reflection.AssemblyProductAttribute("CheckoutProject")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CheckoutProject")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

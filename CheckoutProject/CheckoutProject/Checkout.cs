@@ -12,11 +12,11 @@ namespace CheckoutProject
         private Dictionary<string, int> _scannedItems;
         private IPricing _pricing;
 
-        public Checkout(List<PricingRule> pricingRules)
+        public Checkout(List<PricingRule> pricingRules, IPricing pricing = null)
         {
             _pricingRules = pricingRules.ToDictionary(p => p.Sku, p => p);
             _scannedItems = new Dictionary<string, int>();
-            _pricing = new Pricing();
+            _pricing = pricing?? new Pricing(); //Option permit change rule for pricing
         }
 
         public void Scan(string item)
