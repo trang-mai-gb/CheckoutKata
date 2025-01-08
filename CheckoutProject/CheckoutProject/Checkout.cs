@@ -11,9 +11,9 @@ namespace CheckoutProject
         private Dictionary<string, PricingRule> _pricingRules;
         private Dictionary<string, int> _scannedItems;
 
-        public Checkout(Dictionary<string, PricingRule> pricingRules)
+        public Checkout(List<PricingRule> pricingRules)
         {
-            _pricingRules = pricingRules;
+            _pricingRules = pricingRules.ToDictionary(p => p.Sku, p => p);
             _scannedItems = new Dictionary<string, int>();
         }
 
