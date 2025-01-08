@@ -1,2 +1,2 @@
 # CheckoutKata
-- This solution based on asumption that we work with one scanner at the time, and for small scale. There are many room for improvement with a large scale and parallel processing (many scanners can work same time).
+- This solution is based on the assumption that we are working with a single scanner at a time and for small-scale operations. However, there is significant potential for improvement when scaling up, particularly with parallel processing, where multiple scanners can operate simultaneously.
