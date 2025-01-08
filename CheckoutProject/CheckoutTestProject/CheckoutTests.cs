@@ -49,5 +49,14 @@ namespace CheckoutTestProject
 
             Assert.Equal(0, checkout.GetTotalPrice());
         }
+
+        [Fact]
+        public void Scan_UnknowItem_ThrowException()
+        {
+            var checkout = new Checkout(_pricingRules);
+       
+
+            Assert.Throws<Exception>(() => checkout.Scan("T"));
+        }
     }
 }
