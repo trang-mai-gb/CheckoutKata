@@ -8,6 +8,6 @@ namespace CheckoutProject
 {
     public interface IPricing
     {
-        public int CalculatePrice(string item, PricingRule pricingRule);
+        public int CalculatePrice(int quantity, PricingRule pricingRule);
     }
 }
