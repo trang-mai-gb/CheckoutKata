@@ -1,15 +1,17 @@
-﻿namespace CheckoutProject
+﻿using System.Collections.Concurrent;
+
+namespace CheckoutProject
 {
     public class Checkout : ICheckout
     {
         private Dictionary<string, PricingRule> _pricingRules;
-        private Dictionary<string, int> _scannedItems;
+        private ConcurrentDictionary<string, int> _scannedItems;
         private IPricing _pricing;
 
         public Checkout(List<PricingRule> pricingRules, IPricing? pricing = null)
         {
             _pricingRules = pricingRules.ToDictionary(p => p.Sku, p => p);
-            _scannedItems = new Dictionary<string, int>();
+            _scannedItems = new ConcurrentDictionary<string, int>();
             _pricing = pricing?? new Pricing(); //Option permit change rule for pricing
         }
 
@@ -20,16 +22,7 @@
                 Console.WriteLine($"Item {item} does not found");
                 return;
             }
-            if (_scannedItems.ContainsKey(item)) 
-            { 
-                // Increase number of scannedItem
-                _scannedItems[item]++;
-            }
-            else 
-            {
-                //Start new scannedItem
-                _scannedItems[item] = 1;
-            }
+            _scannedItems.AddOrUpdate(item, 1, (item, oldValue) => oldValue + 1);
 
         }
         public int GetTotalPrice()
