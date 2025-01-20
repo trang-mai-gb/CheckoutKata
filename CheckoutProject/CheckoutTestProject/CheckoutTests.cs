@@ -66,5 +66,19 @@ namespace CheckoutTestProject
             Assert.Equal($"Item {item} does not found\r\n", output.ToString());
          
         }
+
+        [Fact]
+        public void Scan_ParallelItems_ReturnCorrectPrice()
+        {
+            var checkout = new Checkout(_pricingRules);
+
+            Parallel.For(1, 11, i =>
+            {
+                checkout.Scan("C");
+                checkout.Scan("D");
+            });
+
+            Assert.Equal(350, checkout.GetTotalPrice() );
+        }
     }
 }
