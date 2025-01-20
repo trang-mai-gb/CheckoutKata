@@ -1,4 +1,4 @@
-﻿namespace CheckoutProject
+﻿namespace CheckoutProject.PriceModel
 {
     public class Pricing : IPricing
     {
@@ -9,8 +9,8 @@
                 var specialPrice = pricingRule.SpecialPrice.Value;
                 var specialPriceQuantity = pricingRule.SpecialPriceQuantity.Value;
 
-              
-                return (quantity / specialPriceQuantity) * specialPrice + (quantity % specialPriceQuantity) * pricingRule.Price;
+
+                return quantity / specialPriceQuantity * specialPrice + quantity % specialPriceQuantity * pricingRule.Price;
             }
             return quantity * pricingRule.Price;
 

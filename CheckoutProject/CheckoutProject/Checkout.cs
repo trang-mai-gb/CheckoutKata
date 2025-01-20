@@ -1,4 +1,5 @@
 ﻿using System.Collections.Concurrent;
+using CheckoutProject.PriceModel;
 
 namespace CheckoutProject
 {

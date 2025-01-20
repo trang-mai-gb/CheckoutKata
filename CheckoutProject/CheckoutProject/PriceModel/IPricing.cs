@@ -1,4 +1,4 @@
-﻿namespace CheckoutProject
+﻿namespace CheckoutProject.PriceModel
 {
     public interface IPricing
     {

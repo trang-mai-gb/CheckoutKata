@@ -1,4 +1,5 @@
 using CheckoutProject;
+using CheckoutProject.PriceModel;
 namespace CheckoutTestProject
 {
     public class CheckoutTests

@@ -1,4 +1,4 @@
-﻿namespace CheckoutProject
+﻿namespace CheckoutProject.PriceModel
 {
     public class PricingRule
     {
@@ -7,7 +7,7 @@
         public int? SpecialPrice { get; set; }
         public int? SpecialPriceQuantity { get; set; }
 
-        public PricingRule(string sku, int price, int? specialPrice = null, int? specialPriceQuantity = null) 
+        public PricingRule(string sku, int price, int? specialPrice = null, int? specialPriceQuantity = null)
         {
             Sku = sku;
             Price = price;
