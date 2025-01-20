@@ -12,10 +12,7 @@
               
                 return (quantity / specialPriceQuantity) * specialPrice + (quantity % specialPriceQuantity) * pricingRule.Price;
             }
-            else
-            {
-                return quantity * pricingRule.Price;
-            }
+            return quantity * pricingRule.Price;
 
         }
     }
