@@ -10,7 +10,7 @@
                 var specialPriceQuantity = pricingRule.SpecialPriceQuantity.Value;
 
               
-                return (int)((quantity / specialPriceQuantity) * specialPrice + (quantity % specialPriceQuantity) * pricingRule.Price);
+                return (quantity / specialPriceQuantity) * specialPrice + (quantity % specialPriceQuantity) * pricingRule.Price;
             }
             else
             {
