@@ -51,12 +51,20 @@ namespace CheckoutTestProject
         }
 
         [Fact]
-        public void Scan_UnknowItem_ThrowException()
+        public void Scan_UnknowItem_ReturnCorrectMessage()
         {
+            //Arrage
+            var item = "T";
             var checkout = new Checkout(_pricingRules);
-       
+            var output = new StringWriter();
+            Console.SetOut(output);
 
-            Assert.Throws<Exception>(() => checkout.Scan("T"));
+            //Act 
+            checkout.Scan(item);
+
+            //Assert
+            Assert.Equal($"Item {item} does not found\r\n", output.ToString());
+         
         }
     }
 }
