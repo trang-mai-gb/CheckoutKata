@@ -6,7 +6,7 @@
         private Dictionary<string, int> _scannedItems;
         private IPricing _pricing;
 
-        public Checkout(List<PricingRule> pricingRules, IPricing pricing = null)
+        public Checkout(List<PricingRule> pricingRules, IPricing? pricing = null)
         {
             _pricingRules = pricingRules.ToDictionary(p => p.Sku, p => p);
             _scannedItems = new Dictionary<string, int>();
