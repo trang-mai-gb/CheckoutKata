@@ -17,7 +17,8 @@
         {
             if (!_pricingRules.ContainsKey(item)) 
             {
-                throw new Exception($"Item {item} not found.");
+                Console.WriteLine($"Item {item} does not found");
+                return;
             }
             if (_scannedItems.ContainsKey(item)) 
             { 
